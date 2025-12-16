@@ -1,0 +1,28 @@
+# cadastro de eletronicos
+
+# nome do produto (eletronico)
+nome_produto = str(input("digite o nome do produto :"))
+
+#os produtos já cadastrados
+produto_cadastrado = ["celular", "fones de ouvido ", "JBL"]
+
+#avaliacao booleana
+produto_existe = nome_produto in produto_cadastrado
+
+if produto_existe :
+    print ("o produto já está cadastrado")
+
+#preço de venda do produto(eletronico)
+else : 
+    preco_venda = float(input("digite o preço do produto :"))
+
+# quantidade em estoque
+    quantidade = int(input(" digite a quantidade em estouque :"))
+
+# categoria a qual o produto pertence
+    categoria = str(input("digite a categoria do produto:"))
+
+print (" a Loja adquiriu o produto :", nome_produto)
+print (" o produto adquirido tem o valor de : ", preco_venda)
+print (" a quantiade do produto adquirido é : ", quantidade)
+print (" o produto pertence À categoria : ", categoria)
